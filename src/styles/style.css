@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: lightblue;
+  color: rgb(95, 95, 95);
+  padding: 10px 20px;
+}
+
+a {
+  display: inline-block;
+}
+
+h1, nav > a, section {
+  padding: 10px 20px 10px 0;
+}

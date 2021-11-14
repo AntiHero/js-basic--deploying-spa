@@ -9,7 +9,7 @@ module.exports = {
   entry: resolve(__dirname, 'src/index.ts'),
   output: {
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: NODE_ENV === 'production' ? '/js-basic--deploying-spa/' : '/',
     path: resolve(__dirname + '/dist'),
     clean: true,
     environment: {

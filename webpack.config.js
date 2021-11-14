@@ -9,6 +9,7 @@ module.exports = {
   entry: resolve(__dirname, 'src/index.ts'),
   output: {
     filename: 'bundle.js',
+    publicPath: '/',
     path: resolve(__dirname + '/dist'),
     clean: true,
     environment: {
@@ -56,6 +57,7 @@ module.exports = {
   devServer: {
     compress: true,
     port: 9000,
+    historyApiFallback: true,
     client: {
       logging: 'info',
     },

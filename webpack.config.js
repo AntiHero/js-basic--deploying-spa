@@ -11,7 +11,7 @@ module.exports = {
     filename: 'bundle.js',
     path: resolve(__dirname + '/dist'),
     clean: true,
-    publicPath: '/',
+    publicPath: NODE_ENV === 'production' ? '/js-basic--deploying-spa/' : '/',
     environment: {
       arrowFunction: false,
     },

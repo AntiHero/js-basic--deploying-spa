@@ -11,6 +11,7 @@ module.exports = {
     filename: 'bundle.js',
     path: resolve(__dirname + '/dist'),
     clean: true,
+    publicPath: '/',
     environment: {
       arrowFunction: false,
     },
@@ -56,6 +57,7 @@ module.exports = {
   devServer: {
     compress: true,
     port: 9000,
+    historyApiFallback: true,
     client: {
       logging: 'info',
     },

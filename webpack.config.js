@@ -37,7 +37,7 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
     ],
   },
@@ -45,6 +45,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: resolve(__dirname, 'index.html'),
+    }),
+    new HtmlWebpackPlugin({
+      template: resolve(__dirname, 'index.html'),
+      filename: '404.html',
     }),
     new MiniCssExtractPlugin(),
   ],
